@@ -510,9 +510,7 @@ ul {
   margin: 0;
 }
 
-.tint {
-  background-color: var(--header-background-color);
-}
+
 
 .section-title,
 .section-item {
@@ -608,6 +606,10 @@ ul {
   margin-right: auto;
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.tint {
+  background-color: var(--header-background-color);
 }
 
 .team-nav .chapter {

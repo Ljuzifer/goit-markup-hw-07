@@ -47,10 +47,10 @@ img {
 }
 
 .container {
-    width: 428px;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     /* outline: 2px solid green; */
 }
@@ -85,9 +85,10 @@ img {
     margin-bottom: 8px;
     text-align: center;
 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
 }
 
 /* Visually hidden */
@@ -134,7 +135,7 @@ img {
 .section.hero {
     padding-top: 112px;
     padding-bottom: 112px;
-    width: 428px;
+    max-width: 428px;
     height: 432px;
     margin-left: auto;
     margin-right: auto;
@@ -769,7 +770,13 @@ footer {
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 320px) {
+    .modal {
+        width: calc(100% - (15px * 2));
+    }
+}
+
+@media screen and (min-width: 480px) {
     .container {
         width: 428px;
     }

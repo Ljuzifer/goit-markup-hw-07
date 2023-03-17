@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .section.work {
+        display: none;
+    }
+}

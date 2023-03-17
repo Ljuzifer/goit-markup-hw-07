@@ -24,6 +24,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     background-color: var(--primary-background-color);
     color: var(--main-text-color);
 
@@ -85,9 +86,9 @@ img {
     margin-bottom: 8px;
     text-align: center;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
@@ -130,12 +131,51 @@ img {
     color: var(--logo-part-color);
 }
 
+
+.site-nav .link {
+    /* position: relative; */
+    transition: color var(--animation-duration) var(--animation-function);
+
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration-line: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.ping {
+    transition: color var(--animation-duration) var(--animation-function);
+
+    color: var(--main-text-color);
+
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration-line: none;
+}
+
+.address-nav .ping:hover,
+.address-nav .ping:focus {
+    color: var(--accent-color);
+}
+
 /* main hero */
 
 .section.hero {
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 428px;
+    /* width: 100%; */
     height: 432px;
     margin-left: auto;
     margin-right: auto;
@@ -229,7 +269,7 @@ img {
     opacity: 1;
 
     width: 392px;
-    height: 586px;
+    min-height: 586px;
     padding: 72px 24px 24px;
     background-color: var(--modal-bg-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -449,8 +489,20 @@ textarea {
 /* Works */
 
 .section.work {
-    display: none;
+    padding-bottom: 120px;
 }
+
+.work-nav.list {
+    display: flex;
+}
+
+.work-nav .chapter:not(:last-child) {
+    margin-right: 24px;
+}
+
+/* .work-nav .chapter + .chapter {
+  margin-left: 24px;
+} */
 
 /* Team */
 
@@ -464,6 +516,13 @@ textarea {
     background-color: var(--header-background-color);
 }
 
+/* .team-name .section-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+} */
+
 .team-nav .chapter {
     background-color: var(--primary-background-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -472,6 +531,9 @@ textarea {
     width: 264px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.team-nav .chapter:not(:last-child) {
     margin-bottom: 72px;
 }
 
@@ -536,8 +598,8 @@ textarea {
     justify-content: center;
     align-items: center;
 
-    width: 190px;
-    height: 88px;
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--custumer-logo-color);
     border-radius: 4px;
 }
@@ -546,6 +608,7 @@ textarea {
     margin-right: 16px;
     margin-bottom: 72px;
     width: calc((100% - 16px)/2);
+    height: 88px;
 }
 
 .client:nth-child(2n) {
@@ -579,7 +642,6 @@ footer {
 }
 
 .section.foot {
-    /* max-width: 1440px; */
     margin-left: auto;
     margin-right: auto;
     padding-top: 96px;
@@ -716,7 +778,7 @@ footer {
 /* Portfolio */
 
 .section.options {
-    padding: 48px 0;
+    padding: 48px 0 0;
 }
 
 /* Portfolio's buttons */
@@ -770,18 +832,26 @@ footer {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 320px) {
-    .modal {
-        width: calc(100% - (15px * 2));
-    }
+/* Portfolio's cards */
+
+.img-product img {
+    width: 100%;
+    height: 280px;
 }
 
-@media screen and (min-width: 480px) {
-    .container {
-        width: 428px;
-    }
+.cards-nav .chapter {
+    /* margin-right: 24px; */
+    margin: 0 0 48px;
 
-    
+    width: 100%;
+}
+
+.card-name {
+    padding: 32px 16px;
+    margin: 0;
+
+    border: 1px solid var(--header-background-color);
+    border-top: none;
 }
 
 
@@ -791,22 +861,6 @@ footer {
 
 
 
-
-
-
-
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
-}
 
 /* .logo,
 .chapter {

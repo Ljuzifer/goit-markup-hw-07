@@ -502,9 +502,7 @@ ul {
   padding: 0;
 }
 
-.section.work {
-  padding-bottom: 120px;
-}
+
 
 .item-description {
   margin: 0;
@@ -586,6 +584,10 @@ ul {
 }
 
 /* Work */
+
+.section.work {
+  padding-bottom: 120px;
+}
 
 .work-nav.list {
   display: flex;

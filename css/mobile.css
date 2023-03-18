@@ -2,6 +2,19 @@
     .modal {
         width: calc(100% - (15px * 2));
     }
+
+    .ping-mob.mobil {
+        font-size: 32px;
+    }
+
+    .modal-policy {
+        font-size: 10px;
+        letter-spacing: 0.02em;
+    }
+
+    .chapter-social:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -15,5 +28,9 @@
 @media screen and (max-width: 767px) {
     .changeble-menu {
         display: none;
+    }
+
+    .mob-list .chapter:not(:last-child) {
+        margin-bottom: 40px;
     }
 }

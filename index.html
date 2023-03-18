@@ -18,22 +18,31 @@
 <body>  
     <header class="page-header">
         <div class="container head-list">
-            <nav class="head-nav">
+            <div class="mobile-header">
                 <a href="./index.html" class="logo">
-                    <span class="logo-web">Web</span>Studio</a>
-            
-                <ul class="site-nav list">
-                    <li class="chapter"><a href="./index.html" class="link current">Studio</a></li>
-                    <li class="chapter"><a href="./portfolio.html" class="link">Portfolio</a></li>
-                    <li class="chapter"><a href="" class="link">Contacts</a></li>
-                </ul>
-            </nav>
-            <address class="head-address">
-                <ul class="address-nav list">
-                    <li class="chapter"><a href="mailto:info@devstudio.com" class="ping">info@devstudio.com</a></li>
-                    <li class="chapter"><a href="tel:+110001111111" class="ping mobil">+11 (000) 111-11-11</a></li>
-                </ul>
-            </address>
+                    <span class="logo-web">Web</span>Studio
+                </a>
+                <button type="button" class="btn-menu-burger js-open-menu" aria-expanded="false">
+                    <svg class="btn-mobile" width="32" height="32" aria-label="Mobile menu switcher">
+                        <use class="icon-burger" href="./images/icons.svg#menu-burger"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="changeble-menu">
+                <nav class="head-nav">
+                    <ul class="site-nav list">
+                        <li class="chapter"><a href="./index.html" class="link current">Studio</a></li>
+                        <li class="chapter"><a href="./portfolio.html" class="link">Portfolio</a></li>
+                        <li class="chapter"><a href="" class="link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address class="head-address">
+                    <ul class="address-nav list">
+                        <li class="chapter"><a href="mailto:info@devstudio.com" class="ping">info@devstudio.com</a></li>
+                        <li class="chapter"><a href="tel:+110001111111" class="ping mobil">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+            </div>
         </div>
     </header>
 
@@ -355,6 +364,7 @@
         </div>   
     </footer>
 
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
@@ -416,6 +426,33 @@
         </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container">
+        <div class="mobile-btn-close">
+            <button type="button" class="btn-menu-close js-close-menu">
+                <svg class="btn-cross" width="8" height="8" aria-label="Mobile menu switcher">
+                    <use class="icon-cross" href="./images/icons.svg#close-mobile"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-navigation">
+            <nav class="mob-nav">
+                <ul class="mob-list list">
+                    <li class="chapter"><a href="./index.html" class="link current">Studio</a></li>
+                    <li class="chapter"><a href="./portfolio.html" class="link">Portfolio</a></li>
+                    <li class="chapter"><a href="" class="link mob-menu-open">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="mob-address">
+                <ul class="address-mob list">
+                    <li class="chapter"><a href="mailto:info@devstudio.com" class="ping-mob">info@devstudio.com</a></li>
+                    <li class="chapter"><a href="tel:+110001111111" class="ping-mob mobil">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

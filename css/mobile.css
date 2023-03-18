@@ -9,62 +9,11 @@
         width: 428px;
     }
 
-    .container.head-list {
-        /* padding: 0 0 40px 40px; */
-    }
+    
+}
 
-    .site-nav .link {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-    }
-
-    .address-nav {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .address-nav .ping {
-        display: block;
-    }
-
-    .ping {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-
-        margin-bottom: 48px;
-        color: var(--main-text-color);
-    }
-
-    .ping.mobil {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 40px;
-        letter-spacing: 0.02em;
-
-        margin-bottom: 40px;
-        color: var(--logo-part-color);
-    }
-
-    .section.work {
+@media screen and (max-width: 767px) {
+    .changeble-menu {
         display: none;
     }
-
-    .advantages .section-item {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-    }
-
-    .card-name .section-item {
-        text-align: start;
-    }
-
-        .card-product {
-            display: none;
-        }
 }

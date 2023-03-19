@@ -14,7 +14,7 @@
         display: none;
     }
 
-    .logo {
+    .mobile-header .logo {
         margin-right: 120px;
     }
 
@@ -115,7 +115,6 @@
     .container.head-list {
         display: flex;
         align-items: center;
-        /* justify-content: space-between; */
     }
 
     .contact-address {
@@ -123,4 +122,149 @@
     }
 
     /* Main HERO-section */
+
+    .section.hero {
+        max-width: 768px;
+        height: 436px;
+        /* background-image: url(../images/hero-tablet-2x.jpg); */
+    }
+
+    .container .main-title {
+        margin: 0 auto 36px;
+        max-width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
+    /* Modal */
+
+    .modal {
+        width: 408px;
+        min-height: 586px;
+    }
+
+    /* Advantages */
+
+    .advantages.list {
+        display: flex;
+    }
+
+    /* Team */
+
+    .team-nav.list {
+        display: flex;
+        text-align: center;
+    }
+
+    /* Customers */
+
+    .client {
+        margin-right: 24px;
+    }
+
+    /* Footer */
+
+    .logo.foot-part {
+        text-align: start;
+    }
+
+    .foot-social-links .media {
+        text-align: start;
+    }
+
+    .foot-social-links {
+        margin: 0 auto 72px 0;
+    }
+
+    .media {
+        margin-left: 0;
+    }
+
+    .subscribe-label {
+        margin-right: 24px;
+    }
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    
+    /* Advantages */
+
+    .advantages.list {
+        flex-wrap: wrap;
+    }
+
+    .advantages .chapter {
+        max-width: calc((100% - 24px)/2);
+    }
+    
+    .advantages .chapter+.chapter:not(:nth-child(2n+1)) {
+        margin-left: 24px;
+    }
+    
+    .chapter.skill:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+
+    /* Team */
+
+    .team-nav.list {
+        flex-wrap: wrap;
+    }
+
+    .team-nav .chapter+.chapter:not(:nth-child(2n+1)) {
+        margin-left: 24px;
+    }
+    
+    .team-nav .chapter:not(:nth-last-child(-n+2)) {
+        margin-bottom: 64px;
+    }
+    
+    .team-nav .chapter:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+    
+    .team-nav .chapter:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    /* Customers */
+
+    .clients-list {
+        margin-right: 108px;
+        margin-left: 108px;
+    }
+
+    .client {
+        width: calc((100% - 24px * 2)/3);
+    }
+
+    .client:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    .client:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
+
+    /* Footer */
+
+    .foot-info {
+        flex-wrap: wrap;
+    }
+    
+    .foot-logo-end {
+        margin: 0 24px 72px 108px;
+    }
+
+    .subscribe-label input {
+        min-width: 264px;
+    }
+
+    .subscribe-form {
+        margin: 0 auto 0 108px;
+    }
 }

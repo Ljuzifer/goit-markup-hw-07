@@ -32,6 +32,7 @@
   background: rgba(46, 47, 66, 0.4);
 
   opacity: 1;
+  /* overflow: unset; */
 }
 
 .backdrop.is-hidden {

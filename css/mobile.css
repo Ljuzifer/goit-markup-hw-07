@@ -26,7 +26,8 @@
 }
 
 @media screen and (max-width: 767px) {
-    .changeble-menu {
+    .changeble-menu,
+    .contact-address {
         display: none;
     }
 
@@ -38,5 +39,25 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .client:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    .client:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+
+    .foot-info {
+        flex-direction: column;
+    }
+
+    .subscribe-label {
+        margin-bottom: 16px;
+    }
+
+    .subscribe-field {
+        flex-direction: column;
     }
 }

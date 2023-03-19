@@ -324,7 +324,6 @@ img {
 }
 
 .hero .container {
-
     text-align: center;
 }
 
@@ -757,14 +756,6 @@ textarea {
     height: 88px;
 }
 
-.client:nth-child(2n) {
-    margin-right: 0;
-}
-
-.client:nth-last-child(-n+2) {
-    margin-bottom: 0;
-}
-
 .client-icon {
     transition: fill var(--animation-duration) var(--animation-function);
     fill: var(--custumer-logo-color);
@@ -803,7 +794,7 @@ footer {
 }
 
 .foot .item-description {
-    width: 264px;
+    max-width: 264px;
 }
 
 .logo.foot-part {
@@ -852,7 +843,7 @@ footer {
 
 .foot-info {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .foot-social-links {
@@ -867,11 +858,7 @@ footer {
 
 .subscribe-field {
     display: flex;
-    flex-direction: column;
-}
-
-.subscribe-label {
-    margin-bottom: 16px;
+    /* flex-direction: column; */
 }
 
 .subscribe-label input {

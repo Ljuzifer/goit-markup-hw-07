@@ -33,4 +33,10 @@
     .mob-list .chapter:not(:last-child) {
         margin-bottom: 40px;
     }
+
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

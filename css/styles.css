@@ -56,12 +56,6 @@ img {
     /* outline: 2px solid green; */
 }
 
-/* @media screen and (max-width: 320px) {
-    .container {
-        min-width: 480px;
-    }
-} */
-
 .item-description {
     margin: 0;
 }
@@ -111,8 +105,7 @@ img {
 /* header */
 
 .page-header {
-    /* position: relative; */
-    padding: 24px 16px;
+    padding: 24px 0;
     border-bottom: 1px solid var(--header-background-color);
 }
 
@@ -133,11 +126,7 @@ img {
     color: var(--logo-part-color);
 }
 
-.mobile-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .btn-menu-burger {
     display: inline-flex;

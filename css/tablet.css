@@ -3,5 +3,124 @@
         width: 768px;
     }
 
+    .page-header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /* Header */
+
+    .btn-menu-burger {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 120px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .site-nav .link.current {
+        position: relative;
+        color: var(--accent-color);
+    }
     
+    .site-nav .link::after,
+    .site-nav .link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    
+        transform: scale(0, 0);
+        transition: transform var(--animation-duration) var(--animation-function) 100ms;
+    }
+    
+    .site-nav .link:hover::after,
+    .site-nav .link:focus::after {
+        transform: scale(1, 1);
+    }
+    
+    .site-nav .link.current::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    
+        transform: scale(1);
+    }
+    
+    .site-nav .link {
+        position: relative;
+        transition: color var(--animation-duration) var(--animation-function);
+    
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    
+        color: var(--title-text-color);
+    
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        text-decoration-line: none;
+    }
+    
+    .site-nav .link:hover,
+    .site-nav .link:focus {
+        color: var(--accent-color);
+    }
+    
+    .site-nav {
+        display: flex;
+    }
+    
+    .site-nav .chapter:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .ping {
+        transition: color var(--animation-duration) va(--animation-function);
+    
+        color: var(--main-text-color);
+    
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        text-decoration-line: none;
+    }
+    
+    .address-nav .ping:hover,
+    .address-nav .ping:focus {
+        color: var(--accent-color);
+    }
+
+    .address-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container.head-list {
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+
+    .contact-address {
+        margin-left: auto;
+    }
+
+    /* Main HERO-section */
 }

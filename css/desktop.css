@@ -2,4 +2,14 @@
     .container {
         width: 1200px;
     }
+
+    /* Header */
+
+    .address-nav {
+        display: flex;
+    }
+    
+    .address-nav .chapter+.chapter {
+        margin-left: 40px;
+    }
 }

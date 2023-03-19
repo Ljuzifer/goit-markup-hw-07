@@ -233,7 +233,7 @@ textarea {
 }
 
 .check {
-  fill: transparent
+  fill: var(--hero-text-color)
 }
 
 .btn-send {

@@ -304,4 +304,34 @@
     .cards-nav .chapter:not(:nth-child(2n)) {
         margin-right: 24px;
     }
+
+    /* Background image */
+
+    @media (min-device-pixel-ratio: 1),
+    (-webkit-min-device-pixel-ratio: 1),
+    (-o-min-device-pixel-ratio: 1/1),
+    (min-resolution: 96dpi),
+    (min-resolution: 1dppx) {
+        .section.hero {
+            background-image: linear-gradient(to right,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero-tablet-1x.jpg);
+            background-color: var(--secondary-background-color);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section.hero {
+            background-image: linear-gradient(to right,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero-tablet-2x.jpg);
+            background-color: var(--secondary-background-color);
+        }
+    }
 }

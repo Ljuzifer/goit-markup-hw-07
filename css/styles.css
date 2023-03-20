@@ -78,7 +78,6 @@ img {
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 8px;
-    text-align: center;
 
     font-weight: 500;
     font-size: 20px;
@@ -611,20 +610,9 @@ textarea {
 
 /* Advantages */
 
-.advantages .section-item {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-}
-
 .section.odds {
     padding-top: 96px;
     padding-bottom: 96px;
-}
-
-.skill:not(:last-child) {
-    margin-bottom: 72px;
 }
 
 /* Works */
@@ -661,25 +649,12 @@ textarea {
     background-color: var(--header-background-color);
 }
 
-/* .team-name .section-item {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-} */
-
 .team-nav .chapter {
     background-color: var(--primary-background-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
 
     width: 264px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.team-nav .chapter:not(:last-child) {
-    margin-bottom: 72px;
 }
 
 .team-name {
@@ -843,7 +818,6 @@ footer {
 
 .foot-info {
     display: flex;
-    /* flex-direction: column; */
 }
 
 .foot-social-links {
@@ -858,7 +832,6 @@ footer {
 
 .subscribe-field {
     display: flex;
-    /* flex-direction: column; */
 }
 
 .subscribe-label input {
@@ -966,18 +939,6 @@ footer {
 }
 
 /* Portfolio's cards */
-
-.img-product img {
-    width: 100%;
-    height: 280px;
-}
-
-.cards-nav .chapter {
-    /* margin-right: 24px; */
-    margin: 0 0 48px;
-
-    width: 100%;
-}
 
 .card-name {
     padding: 32px 16px;

@@ -184,6 +184,13 @@
     .subscribe-label {
         margin-right: 24px;
     }
+
+    /* Portfolio */
+
+    .cards-nav.list {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -266,5 +273,33 @@
 
     .subscribe-form {
         margin: 0 auto 0 108px;
+    }
+
+    /* Portfolio */
+
+    .section.options {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .btn-list.list {
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    .img-product img {
+        width: 100%;
+    }
+
+    .cards-nav .chapter {
+        width: calc((100% - (24px * 2))/2);
+    }
+
+    .cards-nav .chapter:not(:nth-last-child(-n+2)) {
+        margin-bottom: 72px;
+    }
+
+    .cards-nav .chapter:not(:nth-child(2n)) {
+        margin-right: 24px;
     }
 }

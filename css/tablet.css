@@ -222,8 +222,9 @@
         flex-wrap: wrap;
     }
 
-    .team-nav .chapter+.chapter:not(:nth-child(2n+1)) {
+    .team-nav .chapter + .chapter:not(:nth-child(2n+1)) {
         margin-left: 24px;
+        margin-right: auto;
     }
     
     .team-nav .chapter:not(:nth-last-child(-n+2)) {
@@ -236,6 +237,7 @@
     
     .team-nav .chapter:nth-child(2n+1) {
         margin-right: 0;
+        margin-left: auto;
     }
 
     /* Customers */

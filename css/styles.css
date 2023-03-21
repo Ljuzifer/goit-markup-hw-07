@@ -147,12 +147,13 @@ img {
     
     /* transform: translateY(-100%); */
     transform: scaleY(0);
-    transition: transform 1000ms var(--animation-function);
+    transition: transform 800ms var(--animation-function);
 
     z-index: 666;
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0; */
+    /* visibility: hidden; */
     pointer-events: none;
+    transform-origin: bottom;
 
     display: flex;
     flex-direction: column;
@@ -170,10 +171,14 @@ img {
 .mobile-menu.is-open {
     /* transform: translateY(0); */
     transform: scaleY(1);
-    transform-origin: 0 0;
+    transform-origin: top;
+
+    transition: transform 800ms var(--animation-function);
+    /* opacity 1ms var(--animation-function) 999ms, */
+    /* visibility 1ms var(--animation-function) 999ms; */
     
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1; */
+    /* visibility: visible; */
     pointer-events: all;
 }
 
@@ -206,12 +211,9 @@ img {
 }
 
 .mob-nav .link {
-    /* position: relative; */
     transition: color var(--animation-duration) var(--animation-function);
 
     display: block;
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
 
     color: var(--title-text-color);
 
@@ -226,10 +228,6 @@ img {
 .mob-nav .link:focus {
     color: var(--accent-color);
 }
-
-/* .mob-nav {
-    margin-bottom: auto;
-} */
 
 .address-mob {
     display: flex;

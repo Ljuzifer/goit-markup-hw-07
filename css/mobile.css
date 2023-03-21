@@ -4,16 +4,16 @@
     }
 
     .ping-mob.mobil {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .modal-policy {
-        font-size: 10px;
+        font-size: 8px;
         letter-spacing: 0.02em;
     }
 
     .chapter-social:not(:last-child) {
-        margin-right: 50px;
+        margin-right: 28px;
     }
 }
 
@@ -39,6 +39,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    /* Mobile menu */
+
+    .chapter.menu-mail {
+        margin-bottom: 48px;
+    }
+
+    .chapter.menu-tel {
+        margin-bottom: 40px;
     }
 
     /* Team */

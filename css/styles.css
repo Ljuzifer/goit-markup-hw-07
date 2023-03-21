@@ -109,7 +109,6 @@ img {
 }
 
 .logo {
-    margin-right: auto;
     color: var(--title-text-color);
 
     font-family: 'Raleway', sans-serif;
@@ -254,9 +253,10 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
     text-decoration-line: none;
 }
+
 
 .ping-mob.mobil {
     font-weight: 700;
@@ -264,7 +264,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
 
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     color: var(--logo-part-color);
 }
 
@@ -572,8 +572,9 @@ textarea {
         background-color var(--animation-duration) var(--animation-function),
         border-color var(--animation-duration) var(--animation-function),
         fill var(--animation-duration) var(--animation-function);
-    display: inline-block;
-    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
 
     width: 16px;

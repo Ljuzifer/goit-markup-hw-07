@@ -15,6 +15,11 @@
     .chapter-social:not(:last-child) {
         margin-right: 28px;
     }
+
+    /* Added after checking by mentor */
+    .container {
+        max-width: 428px;
+    }
 }
 
 @media screen and (min-width: 480px) {
